@@ -1,7 +1,7 @@
 {
   "name": "web-page-scraper",
   "version": "0.0.1",
-  "description": "NodeJS app for scraping the web",
+  "description": "NodeJS CLI tool for scraping web pages",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,10 +15,5 @@
   "bugs": {
     "url": "https://github.com/dotzipfile/web-page-scraper/issues"
   },
-  "homepage": "https://github.com/dotzipfile/web-page-scraper#readme",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.3",
-    "request": "^2.85.0"
-  }
+  "homepage": "https://github.com/dotzipfile/web-page-scraper#readme"
 }
