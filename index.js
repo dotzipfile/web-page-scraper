@@ -1,8 +1,11 @@
-// Dependencies
+// Node Dependencies
 const fs = require('fs');
 const https = require('https');
 const url = require('url');
 const stringDecoder = require('string_decoder').StringDecoder;
+
+// External dependencies
+const cheerio = require('cheerio');
 
 // URL to scrape
 let scrapeUrl = 'https://www.imdb.com/';
@@ -31,13 +34,12 @@ const request = https.request(requestOptions, (response) => {
 
     let body = buffer.substring(buffer.indexOf('<body'), buffer.indexOf('</body>') + '</body>'.length);
 
-    fs.writeFile('page.html', body, (err) => {
-      if(err) {
-        console.log(err);
-      }
+    const $ = cheerio.load(body);
+    let imgArray = $('img');
 
-      console.log('Success');
-    });
+    for(let i = 0; i < imgArray.length; i ++) {
+      console.log(imgArray[i].attribs.src);
+    }
   });
 });
 

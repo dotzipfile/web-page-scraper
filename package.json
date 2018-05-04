@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dotzipfile/web-page-scraper/issues"
   },
-  "homepage": "https://github.com/dotzipfile/web-page-scraper#readme"
+  "homepage": "https://github.com/dotzipfile/web-page-scraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  }
 }
