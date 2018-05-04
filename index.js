@@ -8,17 +8,21 @@ const repl = require('repl');
 // External dependencies
 const cheerio = require('cheerio');
 
-// Start REPL
-repl.start({
-  prompt: '>',
-  eval: (str) => {
+const cli = require('./lib/cli.js');
 
-    // Parse URL and send to scrape function
-    let scrapeUrl = str;
-    let parsedUrl = url.parse(scrapeUrl, true);
-    scrape(parsedUrl);
-  }
-});
+cli.init();
+
+// Start REPL
+// repl.start({
+//   prompt: '>',
+//   eval: (str) => {
+
+//     // Parse URL and send to scrape function
+//     let scrapeUrl = str;
+//     let parsedUrl = url.parse(scrapeUrl, true);
+//     scrape(parsedUrl);
+//   }
+// });
 
 // Scrape a web page
 const scrape = (parsedUrl) => {
