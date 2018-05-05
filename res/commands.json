@@ -1,22 +1,14 @@
-[
-  {
-    "command": "exit",
+{
+  "exit": {
+    "commandName": "exit",
     "description": "Close the CLI",
     "syntax": "exit",
-    "parameters": false,
-    "paramList": []
+    "parameters": false
   },
-  {
-    "command": "scrape",
-    "description": "Provide up to 8 URLs to scrape as parameters, will return a list of links",
-    "syntax": "scrape -u [url1] [url2] ... [url8]",
-    "parameters": true,
-    "paramList": [
-      {
-        "key": "-u",
-        "maxAmount": 8,
-        "minAmount": 1
-      }
-    ]
+  "scrape": {
+    "commandName": "scrape",
+    "description": "Provide a URL to scrape, will return list of images on the page",
+    "syntax": "scrape --{url}",
+    "parameters": true
   }
-]
+}

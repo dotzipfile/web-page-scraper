@@ -12,18 +12,6 @@ const cli = require('./lib/cli.js');
 
 cli.init();
 
-// Start REPL
-// repl.start({
-//   prompt: '>',
-//   eval: (str) => {
-
-//     // Parse URL and send to scrape function
-//     let scrapeUrl = str;
-//     let parsedUrl = url.parse(scrapeUrl, true);
-//     scrape(parsedUrl);
-//   }
-// });
-
 // Scrape a web page
 const scrape = (parsedUrl) => {
   
