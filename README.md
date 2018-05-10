@@ -2,12 +2,14 @@
   NodeJS CLI tool for scraping web pages
 
 ### To run
+---
 
   1. npm install
 
   2. node index.js
 
 ###  To use
+---
 
 >**exit** to exit the application
 
@@ -16,6 +18,7 @@
 >eg. **scrape --https://www.imdb.com**
 
 ### Notes
+---
 
 >Scraped urls will be saved to a file in the res directory called: **scrapedUrls.txt**.
 
