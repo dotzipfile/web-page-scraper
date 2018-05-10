@@ -1,13 +1,13 @@
 # web-page-scraper
 NodeJS CLI tool for scraping web pages
 
-### To run:
+### To run
 
   1. npm install
 
   2. node index.js
 
-###  To use:
+###  To use
 
 **exit** to exit the application
 
@@ -15,6 +15,8 @@ NodeJS CLI tool for scraping web pages
 
 eg. **scrape --https://www.imdb.com**
 
-Scraped urls will be saved to a file in the res directory called: **scrapedUrls.txt**
+### Notes
+
+Scraped urls will be saved to a file in the res directory called: **scrapedUrls.txt**.
 
 If there are already urls in the file, they will be overwritted when the scrape command is run.
