@@ -13,7 +13,7 @@
 
 >**exit** to exit the application
 
->**scrape --{URL}** to scrape the specified url eg. **scrape --https://www.imdb.com**
+>**scrape --{URL}** to scrape the specified url, eg. **scrape --https://www.imdb.com**
 
 ### Notes
 ---
