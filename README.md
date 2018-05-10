@@ -3,9 +3,9 @@ NodeJS CLI tool for scraping web pages
 
 ### To run:
 
-npm install
+  1. npm install
 
-node index.js
+  2. node index.js
 
 ###  To use:
 
