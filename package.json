@@ -4,7 +4,7 @@
   "description": "NodeJS CLI tool for scraping web pages",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/dotzipfile/web-page-scraper#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "expect": "^22.4.3",
+    "mocha": "^5.1.1"
   }
 }
