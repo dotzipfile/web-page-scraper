@@ -1,13 +1,13 @@
 # web-page-scraper
 NodeJS CLI tool for scraping web pages
 
-#h3 To run:
+### To run:
 
 npm install
 
 node index.js
 
-#h3 To use:
+###  To use:
 
 **exit** to exit the application
 
